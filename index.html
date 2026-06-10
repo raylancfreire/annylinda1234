@@ -122,13 +122,19 @@ footer h2{
 }
 
 .heart-photo{
+    width:250px;
+    height:225px;
     margin-bottom:25px;
 }
 
 .heart-photo img{
-    width:220px;
-    height:220px;
-    object-fit:contain;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    clip-path:path(
+        "M125 220 C30 150 -20 80 45 30 C90 -5 125 40 125 40 C125 40 160 -5 205 30 C270 80 220 150 125 220 Z"
+    );
 
     animation:pulse 1.5s infinite;
 
